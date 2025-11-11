@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Projects</title>
+  </head>
+  <body class="bg-lightgray text-graphiteblack">
+    
+    <nav class="bg-graphiteblack text-lightgray p-1">
+      <div class="max-w-6xl flex justify-between items-center">
+    
+        <div class="text-2xl font-bold">
+          <span class="inline md:hidden">MR</span>
+          <span class="hidden md:inline">Misha Rumiantsev</span>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 mx-auto">
+          <li><a href="index.html" class="hover:text-aquagreen">Home</a></li>
+          <li><a href="about.html" class="hover:text-aquagreen">About me</a></li>
+          <li><a href="projects.html" class="hover:text-aquagreen">Projects</a></li>
+        </ul>
+
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-2xl">☰</button>
+        </div>
+
+      </div>
+      
+      <ul id="mobile-menu" class="hidden flex-col space-y-4 mt-4 md:hidden text-center">
+        <li><a href="index.html" class="hover:text-aquagreen">Home</a></li>
+        <li><a href="about.html" class="hover:text-aquagreen">About me</a></li>
+        <li><a href="projects.html" class="hover:text-aquagreen">Projects</a></li>
+      </ul>
+
+    </nav>
+    
+    
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

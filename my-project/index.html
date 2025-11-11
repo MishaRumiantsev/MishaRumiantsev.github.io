@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Home</title>
+  </head>
+  <body class="bg-lightgray text-graphiteblack">
+    
+    <nav class="bg-graphiteblack text-lightgray p-1">
+      <div class="max-w-6xl flex justify-between items-center">
+    
+        <div class="text-2xl font-bold">
+          <span class="inline md:hidden">MR</span>
+          <span class="hidden md:inline">Misha Rumiantsev</span>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 mx-auto">
+          <li><a href="index.html" class="hover:text-aquagreen">Home</a></li>
+          <li><a href="about.html" class="hover:text-aquagreen">About me</a></li>
+          <li><a href="projects.html" class="hover:text-aquagreen">Projects</a></li>
+        </ul>
+
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-2xl">☰</button>
+        </div>
+
+      </div>
+      
+      <ul id="mobile-menu" class="hidden flex-col space-y-4 mt-4 md:hidden text-center">
+        <li><a href="index.html" class="hover:text-aquagreen">Home</a></li>
+        <li><a href="about.html" class="hover:text-aquagreen">About me</a></li>
+        <li><a href="projects.html" class="hover:text-aquagreen">Projects</a></li>
+      </ul>
+
+    </nav>
+
+    <main>
+
+      <section class="md:min-h-[500px] max-w-6xl mx-auto flex flex-col justify-center md:flex-row items-center p-6 ">
+  
+        <div class="hidden md:inline justify-center">
+          <img src="src/images/image.jpg" alt="Me" class="w-72 h-72 rounded-full object-cover border-4 border-aquagreen shadow-lg">
+        </div>
+
+        <div class="pl-2 text-left">
+          <h1 class="text-5xl md:text-7xl font-bold text-graphiteblack mb-2">Misha Rumiantsev</h1>
+          <p class="text-lg md:text-3xl text-graphiteblack mb-4">I am a second-year software development<br>student at ROC van Twente.</p>
+          <div class="flex flex-row justify-center md:justify-start gap-4">
+            <a href="about.html" class="bg-aquagreen hover:bg-darkaquagreen text-lightgray px-5 py-2 rounded-lg font-medium">About me</a>
+            <a href="projects.html" class="bg-aquagreen hover:bg-darkaquagreen text-lightgray px-5 py-2 rounded-lg font-medium">Projects</a>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
